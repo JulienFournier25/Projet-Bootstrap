@@ -1,0 +1,299 @@
+/* Général */
+html{
+    overflow-x: hidden;
+}
+body{
+    background-color: black;
+}
+/* Header */
+header{
+    background-image:url("../img/Capture d’écran(44).png");
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}
+header .headerSpace{
+    width: 100%;
+    height: 100vh;
+}
+header button{
+    z-index: 1;
+}
+/* Nav */
+.navbar{
+    z-index: 98;
+    background-color: rgb(0, 0, 0);
+}
+/* Carousel */
+.carousel img{
+    height: 75vh;
+}
+/* Footer */
+.réseauxSociaux img{
+    width: 5vh;
+}
+/*contact*/
+.contact{
+    background-color: #f9f9fb;
+}
+.contact .formulairerect {
+    max-width: 900px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+    padding: 60px 10px ; 
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 3vh 8vh -1vh #d6d6d6;
+}
+.contact .formulairerect .title {
+    color: #2a2a2a;
+}
+.contact .formulairerect form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px;
+}
+.contact .formulairerect form input:hover,
+.contact .formulairerect form textarea:hover {
+    
+    border-bottom: 2px solid #6d6d6d;
+}
+.contact .formulairerect form input,
+.contact .formulairerect form textarea {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #e4e4ec;
+}
+.contact .formulairerect form .button {
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+}
+.contact .formulairerect form .button:hover {
+    box-shadow: 0px 10px 40px 0px #d6d6d6;;
+}
+/* connexion */
+.passwordForgot:hover{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #6d6d6d;
+}
+/* article*/
+#présentation{
+    background-image: url("../img/moon.jpg");
+    background-size:1500px 1000px;
+    background-repeat: no-repeat;
+background-size: cover;
+
+min-height:1519px;
+background-size: cover;
+background-size: contain;
+}
+#fonctionnalité{
+    background-image: url("../img/earth.jpg");
+    background-size:1500px 1000px;
+    background-repeat: no-repeat;
+background-size: cover;
+
+min-height:1519px;
+background-size: cover;
+
+}
+#frontCamera{
+    border-radius: 0px 10px 10px 0px;
+    position: absolute;
+    width: 580.5px;
+    height: 530.867px;  
+    margin-left: 365px;
+}
+#secondPicture{
+    border-radius: 10px 0px 00px 10px;
+    margin-left: 190px;
+    position: absolute;
+    width: 580.5px;
+    height: 530.867px;
+    
+}
+
+.leftDescription{
+    background-color:rgba(15, 14, 14, 0.9);
+   height: 450px;
+margin-top: -10px;
+border-radius: 0px 10px 10px 0px;
+margin-left: 130px;
+line-height: 45px;
+border:solid 2px rgb(0, 166, 243);
+border-right: none;
+}
+.rightDescription{
+   background-color:rgba(15, 14, 14, 0.9);
+   height: 550px;
+margin-top: -10px;
+line-height: 45px;
+border-radius: 10px 0px 0px 10px;
+margin-right: 495px;
+padding:10px;
+border:solid 2px rgb(0, 166, 243);
+border-right: none;
+}
+#présentation p,#fonctionnalité p{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    background: linear-gradient(to right, white, #2196f3, #26c6da,red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+#firstArticle{ 
+   padding-top: 58px;
+   padding-bottom: 100px;
+}
+span
+{
+    background: linear-gradient(to right, red,green,yellow, white,blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+#titleSection{
+    background: linear-gradient(to right,  #2196f3, #26c6da,red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+/* Media responsive */
+@media (max-width: 900px) {
+    .carousel img{
+        height: 70vh;
+    }
+}
+@media (max-width: 868px) {
+    #firstBloc{
+       background-size: cover;
+    
+    } 
+    #firstArticle{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    /*deuxieme article*/
+    .leftDescription{
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0px;
+    font-size: 0.15rem;
+    height: auto;
+    }
+   
+    
+.rightDescription{
+border-radius: 0 ;
+font-size: 0.15rem;
+width: 100%;
+margin-top: 30px;
+background-color:rgba(15, 14, 14, 0.5);
+height: auto;
+}
+
+#secondPicture,#frontCamera{
+height: auto;
+min-width: 100%;
+margin: -10px;
+
+position:static;
+
+
+border-radius: 0 0 0 0;
+border: oldlace 1px solid;
+
+
+}
+#rightPicture{
+position: static;
+height: auto;
+width: auto;
+min-width: 100%;
+margin: 0;
+padding: 0;
+display: grid;
+justify-content: center;
+align-items: center;
+}
+#leftPicture{
+height: auto;
+width:  auto;
+display: grid;
+justify-content: center;
+align-items: center;
+}
+}    
+@media (max-width: 768px) {
+    header{
+        background-image:url("../img/Capture d’écran(44).png");
+        background-size: 100% 80vh;
+        background-repeat: no-repeat;
+    }  
+    header .headerSpace{
+        height: 80vh;
+    }
+    .carousel img{
+        height: 60vh;
+    }
+}
+@media (max-width: 576px) {
+    header{
+        background-image:url("../img/Capture d’écran(44).png");
+        background-size: 100% 50vh;
+        background-repeat: no-repeat;
+    } 
+    header .headerSpace{
+        margin-left: 1vh;
+        height: 50vh;
+    }
+    .navbar ul  a{
+        font-size: 13px;
+    }
+    .carousel img{
+        height: 30vh;
+    }
+    #frontCamera{
+        margin: 1%;
+        width: 100%;
+        height: auto;  
+    }
+    #secondPicture{
+        margin: 1%;
+        width: 100%;
+        height: auto;
+        
+    }
+}
+@media (max-width: 450px) {
+    header{
+        background-image:url("../img/Capture d’écran(44).png");
+        background-size: 100% 40vh;
+        background-repeat: no-repeat;
+    } 
+    header .headerSpace{
+        margin-left: 1vh;
+        height: 40vh;
+    }
+    .navbar ul  a{
+        font-size: 10px;
+    }
+    .carousel img{
+        height: 20vh;
+    }
+}
