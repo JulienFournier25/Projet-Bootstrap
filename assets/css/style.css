@@ -1,6 +1,6 @@
 /* Général */
 html{
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 body{
     background-color: black;
@@ -107,20 +107,19 @@ min-height:1519px;
 background-size: cover;
 
 }
-#frontCamera{
+.frontCamera{
     border-radius: 0px 10px 10px 0px;
     position: absolute;
     width: 580.5px;
     height: 530.867px;  
-    margin-left: 365px;
+    margin-left: 22%;
 }
-#secondPicture{
+.secondPicture{
     border-radius: 10px 0px 00px 10px;
-    margin-left: 190px;
+    margin-left: 9%;
     position: absolute;
     width: 580.5px;
-    height: 530.867px;
-    
+    height: auto;
 }
 
 .leftDescription{
@@ -156,7 +155,7 @@ border-right: none;
     -webkit-text-fill-color: transparent;
     text-align: center;
 }
-#firstArticle{ 
+.firstArticle{ 
    padding-top: 58px;
    padding-bottom: 100px;
 }
@@ -167,23 +166,54 @@ span
     -webkit-text-fill-color: transparent;
     font-weight: bold;
 }
-#titleSection{
+.titleSection{
     background: linear-gradient(to right,  #2196f3, #26c6da,red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     }
 /* Media responsive */
+@media (max-width:1200px) {
+    .frontCamera{
+        position: relative;
+        margin-left: 21%;
+        width: 75%;
+        height: auto;
+    }
+    .secondPicture{
+        position: relative;
+        margin-left: 30%;
+        width: 75%;
+        height: auto;
+    }
+    .container-fluid,.container{
+        padding: 0px;
+    }
+    .leftDescription{
+        margin-left: 0px;
+        font-size: 1rem;
+        height: auto;
+        padding:0px;
+        }
+       
+        
+    .rightDescription{
+    font-size: 1rem;
+    margin-right: 0px;
+    height: auto;
+    padding:0px;
+    }
+}
 @media (max-width: 900px) {
     .carousel img{
         height: 70vh;
     }
 }
 @media (max-width: 868px) {
-    #firstBloc{
+    .firstBloc{
        background-size: cover;
     
     } 
-    #firstArticle{
+    .firstArticle{
         display: flex;
         flex-direction: column;
        
@@ -193,7 +223,7 @@ span
     width: 100%;
     margin-top: 30px;
     margin-left: 0px;
-    font-size: 0.15rem;
+    font-size: 0.25vh;
     height: auto;
     }
    
@@ -202,41 +232,20 @@ span
 border-radius: 0 ;
 font-size: 0.15rem;
 width: 100%;
+margin-left: 0px;
 margin-top: 30px;
 background-color:rgba(15, 14, 14, 0.5);
 height: auto;
 }
-
-#secondPicture,#frontCamera{
-height: auto;
-min-width: 100%;
-margin: -10px;
-
-position:static;
-
-
-border-radius: 0 0 0 0;
-border: oldlace 1px solid;
-
-
+.frontCamera{
+    margin-left: 15%;
 }
-#rightPicture{
-position: static;
-height: auto;
-width: auto;
-min-width: 100%;
-margin: 0;
-padding: 0;
-display: grid;
-justify-content: center;
-align-items: center;
+.secondPicture{
+    margin-left: 15%;
+    
 }
-#leftPicture{
-height: auto;
-width:  auto;
-display: grid;
-justify-content: center;
-align-items: center;
+#présentation p,#fonctionnalité p{
+    font-size: 1rem;
 }
 }    
 @media (max-width: 768px) {
@@ -250,6 +259,12 @@ align-items: center;
     }
     .carousel img{
         height: 60vh;
+    }
+    .frontCamera{
+        margin-left: 5%;
+    }
+    .secondPicture{
+        margin-left: 5%;
     }
 }
 @media (max-width: 576px) {
@@ -268,17 +283,15 @@ align-items: center;
     .carousel img{
         height: 30vh;
     }
-    #frontCamera{
-        margin: 1%;
-        width: 100%;
-        height: auto;  
+    .frontCamera{
+        margin-left: 0px;
     }
-    #secondPicture{
-        margin: 1%;
-        width: 100%;
-        height: auto;
-        
+    .secondPicture{
+        margin-left: 0px;
     }
+    #présentation p,#fonctionnalité p{
+        font-size: 0.75rem;
+    } 
 }
 @media (max-width: 450px) {
     header{
